@@ -27,11 +27,13 @@ namespace MARJORIE_TP_FUNCIONARIO
     public void CalculoSalarioBase()
         {
             SalarioBase = ValorDiaria * DiasTrabalhados;
+            CalculoDoIR();
+            CalculoSalarioLiquido();
         }
 
 
          
-        public void CalculoDoIR()
+        private void CalculoDoIR()
         {
 
             if (SalarioBase <= 1903.98){
@@ -58,7 +60,7 @@ namespace MARJORIE_TP_FUNCIONARIO
 
         }
 
-        public void CalculoSalarioLiquido()
+       private void CalculoSalarioLiquido()
         {
             SalarioLiquido = SalarioBase - PercentualDoIR;
         }

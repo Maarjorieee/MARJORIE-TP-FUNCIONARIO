@@ -21,13 +21,9 @@ namespace MARJORIE_TP_FUNCIONARIO
 
             txtSalarioBase.Text = funcionario.SalarioBase.ToString();
 
-            funcionario.CalculoDoIR();
-
             txtValorDoIR.Text = funcionario.PercentualDoIR.ToString();
 
-            funcionario.CalculoSalarioLiquido();
-
-            txtSalarioLiquido.Text = funcionario.SalarioLiquido.ToString();
+                        txtSalarioLiquido.Text = funcionario.SalarioLiquido.ToString();
         }
 
             
