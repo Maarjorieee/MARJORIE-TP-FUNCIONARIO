@@ -35,22 +35,22 @@ namespace MARJORIE_TP_FUNCIONARIO
         {
 
             if (SalarioBase <= 1903.98){
-                PercentualDoIR = 0;
+                PercentualDoIR = SalarioBase * 0 / 100;
             }
 
             else if (SalarioBase <= 2826.65)
             {
-                PercentualDoIR = 7.50;
+                PercentualDoIR = SalarioBase * 7.50 / 100;
             }
 
             else if (SalarioBase <= 3751.05)
             {
-                PercentualDoIR = 15;
+                PercentualDoIR = SalarioBase *15/100;
             }
 
             else
             {
-                PercentualDoIR = 22.50;
+                PercentualDoIR = SalarioBase * 22.50 / 100;
             }
 
            
@@ -60,7 +60,7 @@ namespace MARJORIE_TP_FUNCIONARIO
 
         public void CalculoSalarioLiquido()
         {
-            SalarioLiquido = (SalarioBase * PercentualDoIR)/100;
+            SalarioLiquido = SalarioBase - PercentualDoIR;
         }
     }
 }
