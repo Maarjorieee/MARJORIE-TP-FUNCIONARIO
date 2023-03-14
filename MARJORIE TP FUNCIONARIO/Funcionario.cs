@@ -21,7 +21,7 @@ namespace MARJORIE_TP_FUNCIONARIO
 
         public double SalarioLiquido { get; private set; }
 
-        public double PercentualDoIR{ get; set; }
+        public double PercentualDoIR{ get; private set; }
 
 
     public void CalculoSalarioBase()
